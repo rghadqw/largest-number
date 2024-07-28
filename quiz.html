@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Find the largest of three given integers</h1>
+<input type="text" id="x1" >
+<input type="text" id="y1" >
+<input type="text" id="z1"  >
+<button type="submit" value="submit" onclick="large()">submit</button><br>
+<span id="r">the result</span>
+
+
+        <script>
+            function large(){
+    var x=document.getElementById("x1").value;
+    var y=document.getElementById("y1").value;
+    var z=document.getElementById("z1").value;
+    var result;
+    
+    if(x>y&&x>z){
+result = document.getElementById("r").innerHTML=x;
+
+}
+else if (y>x&&y>z){
+    result = document.getElementById("r").innerHTML=y;
+
+
+}
+else if(z>x&&z>y){
+
+result = document.getElementById("r").innerHTML=z;
+}
+}
+
+   </script>
+  </body>
+</html>
